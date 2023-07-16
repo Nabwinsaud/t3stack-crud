@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
     // provider = "postgres" // for local dev
-    provider = "sqlite" // for vercel
+    provider = "mysql" // for vercel
     url      = env("DATABASE_URL")
 }
 
@@ -76,3 +76,5 @@ model Todo {
 
     @@map("todo")
 }
+
+// db.sqlite push  to push to vercel
